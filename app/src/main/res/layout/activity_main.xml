@@ -1,7 +1,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/soccerfield">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,9 +18,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="42dp"
+                android:layout_marginRight="12dp"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center"
-                android:padding="16dp"
+                android:padding="8dp"
                 android:text="Team A"
                 android:textColor="@color/team_text_color"
                 android:textSize="14sp"
@@ -29,6 +32,8 @@
                 android:id="@+id/team_a_score"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="42dp"
+                android:layout_marginRight="12dp"
                 android:fontFamily="sans-serif-light"
                 android:gravity="center"
                 android:padding="16dp"
@@ -39,9 +44,8 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
+                android:layout_marginLeft="42dp"
+                android:layout_marginRight="12dp"
                 android:layout_marginTop="8dp"
                 android:onClick="team_A_score"
                 android:text="Score" />
@@ -50,6 +54,8 @@
                 android:id="@+id/team_a_foul"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="42dp"
+                android:layout_marginRight="12dp"
                 android:fontFamily="sans-serif-light"
                 android:gravity="center"
                 android:padding="16dp"
@@ -61,8 +67,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
+                android:layout_marginLeft="42dp"
+                android:layout_marginRight="12dp"
                 android:layout_marginTop="8dp"
                 android:onClick="team_A_foul"
                 android:text="Foul" />
@@ -84,9 +90,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="42dp"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center"
-                android:padding="16dp"
+                android:padding="8dp"
                 android:text="Team B"
                 android:textColor="@color/team_text_color"
                 android:textSize="14sp"
@@ -96,6 +104,8 @@
                 android:id="@+id/team_b_score"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="42dp"
                 android:fontFamily="sans-serif-light"
                 android:gravity="center"
                 android:padding="16dp"
@@ -106,9 +116,8 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="42dp"
                 android:layout_marginTop="8dp"
                 android:onClick="team_B_score"
                 android:text="Score" />
@@ -117,6 +126,8 @@
                 android:id="@+id/team_b_foul"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="42dp"
                 android:fontFamily="sans-serif-light"
                 android:gravity="center"
                 android:padding="16dp"
@@ -128,8 +139,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="42dp"
                 android:layout_marginTop="8dp"
                 android:onClick="team_B_foul"
                 android:text="Foul" />

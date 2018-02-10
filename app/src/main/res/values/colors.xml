@@ -4,6 +4,6 @@
     <color name="colorPrimaryDark">#9f3034</color>
     <color name="colorAccent">#ffd640</color>
     
-    <color name="team_text_color">#616161</color>
-    <color name="score_text_color">#000000</color>
+    <color name="team_text_color">#CCCCCC</color>
+    <color name="score_text_color">#CCCCCC</color>
 </resources>
