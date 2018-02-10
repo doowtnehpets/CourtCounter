@@ -10,6 +10,9 @@ public class MainActivity extends AppCompatActivity {
     int team_A_score = 0;
     int team_B_score = 0;
 
+    int team_A_foul = 0;
+    int team_B_foul = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,65 +22,55 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Displays the given score for Team A.
      */
-    public void displayForTeamA(int score) {
+    public void displayForTeamA() {
         TextView scoreView = (TextView) findViewById(R.id.team_a_score);
-        scoreView.setText(String.valueOf(score));
+        scoreView.setText(String.valueOf(team_A_score));
+
+        TextView foulView = (TextView) findViewById(R.id.team_a_foul);
+        foulView.setText(String.valueOf(team_A_foul));
     }
 
     /**
      * Increases Team A score by 3 points
      */
-    public void team_A_3points(View view) {
-        team_A_score += 3;
-        displayForTeamA(team_A_score);
+    public void team_A_score(View view) {
+        team_A_score++;
+        displayForTeamA();
     }
 
     /**
      * Increases Team A score by 2 points
      */
-    public void team_A_2points(View view) {
-        team_A_score += 2;
-        displayForTeamA(team_A_score);
-    }
-
-    /**
-     * Increases Team A score by 1 point
-     */
-    public void team_A_freethrow(View view) {
-        team_A_score += 1;
-        displayForTeamA(team_A_score);
+    public void team_A_foul(View view) {
+        team_A_foul++;
+        displayForTeamA();
     }
 
     /**
      * Displays the given score for Team B.
      */
-    public void displayForTeamB(int score) {
+    public void displayForTeamB() {
         TextView scoreView = (TextView) findViewById(R.id.team_b_score);
-        scoreView.setText(String.valueOf(score));
+        scoreView.setText(String.valueOf(team_B_score));
+
+        TextView foulView = (TextView) findViewById(R.id.team_b_foul);
+        foulView.setText(String.valueOf(team_B_foul));
     }
 
     /**
      * Increases Team B score by 3 points
      */
-    public void team_B_3points(View view) {
-        team_B_score += 3;
-        displayForTeamB(team_B_score);
+    public void team_B_score(View view) {
+        team_B_score++;
+        displayForTeamB();
     }
 
     /**
      * Increases Team B score by 2 points
      */
-    public void team_B_2points(View view) {
-        team_B_score += 2;
-        displayForTeamB(team_B_score);
-    }
-
-    /**
-     * Increases Team B score by 1 point
-     */
-    public void team_B_freethrow(View view) {
-        team_B_score += 1;
-        displayForTeamB(team_B_score);
+    public void team_B_foul(View view) {
+        team_B_foul++;
+        displayForTeamB();
     }
 
     /**
@@ -86,7 +79,9 @@ public class MainActivity extends AppCompatActivity {
     public void reset_score(View view) {
         team_A_score = 0;
         team_B_score = 0;
-        displayForTeamA(0);
-        displayForTeamB(0);
+        team_A_foul = 0;
+        team_B_foul = 0;
+        displayForTeamA();
+        displayForTeamB();
     }
 }
